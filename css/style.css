@@ -13,8 +13,10 @@ h1,h2, h3, h4, h5, h6 {
 	font-family: "Open Sans", sans-serif;
 }
 .container{
-	padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
+
 /* HEADER */
 .blue-bg{
     width: 100%;
@@ -112,14 +114,15 @@ h1,h2, h3, h4, h5, h6 {
 	width: 100%;
 	background-size: cover;
 	height: 100%;
-	min-height: 655px;
+	min-height: 665px;
 	padding-top: 62px;
+    margin-bottom: 63px;
 }
 .welcome-text{
-	margin-left: 104px;
+	margin-left: -76px;
 	background: url(../images/banner-text-bg.png) center center no-repeat;
 	width: 554px;
-	height: 503px
+	height: 514px
 }
 
 .welcome-text h1{
@@ -128,20 +131,20 @@ h1,h2, h3, h4, h5, h6 {
 	font-size: 36px;
 	margin-top: 0;
 	font-weight: 600;
-	padding: 60px 0 0 76px;
+	padding: 72px 0 0 81px;
 	line-height: 1.2;
 	margin-bottom: 28px;
 }
 .welcome-text p{
-	max-width: 477px;
+	max-width: 482px;
 	font-size: 17px;
-	padding-left: 76px;
+	padding-left: 81px;
 	font-weight: 600;
 }
 .welcome-text a{
 	margin-left: 76px;
 }
-.small p{
+.small{
 	font-size: 16px;	
 }
 .welcome-text .small p{
@@ -160,21 +163,22 @@ h1,h2, h3, h4, h5, h6 {
 	color: #01579b;
 	line-height: 1.667;
 	font-weight: 400;
+    margin-bottom: 14px;
 }
 .semibold{
 	font-weight: 600;
 }
 .top-text .semibold{
 	max-width: 750px;
-	margin-bottom: 47px;
+	margin-bottom: 40px;
 }
 
 /*carousel*/
 .carousel{
-	margin-bottom: 60px;
+	margin-bottom: 35px;
 }
 .active .col-xs-4 img{
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 /*.active .col-xs-4:nth-child(2) img{
 	margin-left: auto;
@@ -184,30 +188,27 @@ h1,h2, h3, h4, h5, h6 {
 	margin-left: auto;
 	margin-right: 0;
 }
-.active .col-xs-4:first-child{
-	padding-left: 0;
-}
-/*.slide{
+.slide{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 }*/
 .slide img{
-	min-width:290px;
+	min-width:308px;
 	
 }
 .slide p{
-	min-width:305px;
-	
+	min-width:308px;
+    margin-bottom: 0;
 }
 /*.slide .first{
+	
 	justify-content: flex-start;	
 }
 .slide .second{
 	
 	justify-content: center;	
 }
-/*.slide .trird{
+.slide .trird{
 	justify-content: flex-end;	
 }*/
 .no-pad{
@@ -279,7 +280,8 @@ h1,h2, h3, h4, h5, h6 {
 .clipboard:before{
 	position: absolute;
 	content: '';
-	left: 35px;
+	left: 15px;
+    top: 5px;
 	background: url(../images/clipboard.svg) center center no-repeat;
 	background-size: contain;
 	width: 40px;
@@ -297,7 +299,8 @@ h1,h2, h3, h4, h5, h6 {
 .medal:before{
 	position: absolute;
 	content: '';
-	left: 35px;
+	left: 74px;
+    top: 5px;
 	background: url(../images/Medal.svg) center center no-repeat;
 	background-size: contain;
 	width: 51px;
@@ -313,8 +316,8 @@ h1,h2, h3, h4, h5, h6 {
 	height: 58px;	
 }
 .with-icon{
-	padding-left: 100px;
-    max-width: 440px;
+	padding-left: 75px;
+    max-width: 428px;
 }
 .with-icon.wide{
 	max-width: 474px;
