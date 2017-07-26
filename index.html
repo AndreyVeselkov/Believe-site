@@ -272,27 +272,35 @@
 						<form id="home" method="post">
 							<div class="form-row">
 								<p class="lead">Who needs care?</p>
-								<input type="radio" name="me" value="me"/> <label for="me">Me</label>
-								<input type="radio" name="loved" value="loved"><label>A loved one</label>
+								<div class="radio">
+									<input id="radio-1" name="radio" type="radio" checked>
+    								<label for="radio-1" class="radio-label">Me</label>
+   									<input id="radio-2" name="radio" type="radio">
+   									<label  for="radio-2" class="radio-label">A loved one</label>
+								</div>
 							</div>
-							<div class="form-row">
+							<div class="form-row name">
 								<input type="text" name="name" placeholder="Firts, Last Name"/>
 							</div>
-							<div class="form-row">
-								<label>Choose a way to communicate</label></br>
-								<input type="checkbox" name="mail">
-								<label for="mail">Mail</label>
-								<input type="checkbox" name="phone">
-								<label for="phone">Phone</label>
+							<div class="form-row form-checkbox">
+								<label id="choose">Choose a way to communicate</label></br>
+								<label id="form-mail">
+									<input type="checkbox" name="mail" class="option-input checkbox"/>
+									Mail
+								</label>
+					 			<label>
+									<input type="checkbox" name="phone" class="option-input checkbox"/>
+									Phone
+								</label>
 							</div>
-							<div class="form-row">
+							<div class="form-row zip">
 								<input type="text" name="zip" placeholder="ZIP (where care is desired)"/>
 							</div>
-							<div class="form-row">
+							<div class="form-row questions">
 								<textarea name="questions" placeholder="Questions or comments"></textarea>
 							</div>
-							<div class="form-row">
-								<select class="form-control" id="sel1" >
+							<div class="form-row hear">
+								<select class="form-control new-icon" id="sel1">
 									<option selected disabled hidden="">How did you hear about us?</option><option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -300,14 +308,42 @@
 								</select>
 							</div>
 							<div class="form-row">
-								<input type="submit"/>
+								<input type="submit" value="Send Request"/>
+							
 					</form>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 		
-		
+	</div>
+	<div class="footer">
+		<div class="footer-logo">
+			<img src="images/footer-logo.png">
+		</div>
+		<div class="nav">
+			<ul class="footer-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">FAQS</a></li>
+				<li><a class="footer-caregiver" href="#">Caregivers</a></li>
+				<li><a href="#">Partners</a></li>
+				<li><a href="#">Privacy policy</a></li>
+				<li><a href="#">EOE</a></li>
+				<li><a href="#">Terms of Use</a></li>
+			</ul>
+		</div>
+		<div class="social">
+			<a href="#"><img src="images/facebook.svg"></a>
+			<a href="#"><img src="images/google.svg"></a>
+			<a href="#"><img src="images/linkedin.svg"></a>
+			<a href="#"><img src="images/twitter.svg"></a>
+		</div>
+		<div class="footer-contact">
+			<a class="btn-outline" href="#">Contact Us</a>
+			<a class="btn-filled" href="#">215-345-5555</a>
+		</div>
 	</div>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 	<script type="text/javascript" src="js/script.js"></script>
