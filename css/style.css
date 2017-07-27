@@ -442,8 +442,8 @@ h1,h2, h3, h4, h5, h6 {
 
 .contact-form{
 	padding: 91px 0 265px 0;
-	background: #f0f1f1 url(../images/contact-section-bg.jpg) left center no-repeat;
-	background-size: cover;
+	background: #f0f1f1 url(../images/contact-section-bg.jpg) left bottom no-repeat;
+	background-size: contain;
 }
 .contact-form h2{
 	font-size: 36px;
@@ -457,6 +457,8 @@ form{
 	/*height: 607px;*/
 	font-family:  "Open Sans", sans-serif;
 	font-size: 18px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 37px 0px rgba(68, 55, 41, 0.32);
 }
 form input::placeholder{
 	color: #898c8f;
@@ -483,7 +485,7 @@ form textarea::placeholder{
 .form-row.questions{
 	margin-bottom: 15px
 }
-.form-row input[type="text"], textarea {
+.form-row input[type="text"],input[type="email"], textarea {
 	width: 100%;
 	border-radius: 2px;
 	border: 1px solid #d5d9de;
@@ -915,7 +917,259 @@ p.after-list{
 	margin-top: 3px;
 	margin-left: -30px;
 }
+/**** FAQ END ****/
 
+/**** CAREGIVERS ****/
+
+.caregivers-banner{
+	background: #2279af url(../images/caregivers-banner.jpg) center center no-repeat;
+	background-size: contain;
+	width: 100%;
+	min-height: 329px;
+	padding-top: 79px;
+	
+}
+.caregivers-banner h1{
+	font-size: 40px;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 46px;
+}
+.caregivers-banner p{
+	color: #fff;
+}
+.main-caregivers{
+	padding-top: 87px;
+	background: #f4f6f8;
+	
+}
+.main-caregivers p.with-icon{
+	max-width: 100%;
+}
+.gift:before{
+	position: absolute;
+	content: '';
+	background: url(../images/present.svg) center center no-repeat;
+	background-size: contain;
+	margin-top: 4px;
+	left: 0;
+	width: 62px;
+	height: 62px;
+}
+.people:before{
+	position: absolute;
+	content: '';
+	background: url(../images/people.svg) center center no-repeat;
+	background-size: contain;
+	margin-top: 4px;
+	left: 0;
+	width: 64px;
+	height: 64px;
+}
+.rocket:before{
+	position: absolute;
+	content: '';
+	background: url(../images/Roket.svg) center center no-repeat;
+	background-size: contain;
+	margin-top: 6px;
+	left: 0;
+	width: 70px;
+	height: 73px;
+}
+.caregiver-icons p:nth-child(even){
+	margin-bottom: 39px;
+}
+#caregivers .fields{
+	margin-bottom: 19px;
+}
+#caregivers p.lead{
+	margin-bottom: 20px;
+}
+#caregivers .radio{
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+.form-flex{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 28px;
+}
+.form-row.half{
+	display: inline-block;
+	width: 196px;
+}
+.after-form-text{
+	margin-top: 23px;
+}
+.after-form-text p{
+	text-align: center;
+	font-size: 16px;
+	color: #8fa3b7;
+}
+.question:before{
+	position: absolute;
+	content: '';
+	background: url(../images/clock%20+%20phone.svg) center center no-repeat;
+	background-size: contain;
+	width: 57px;
+	height: 57px;
+	margin-top: 5px;
+}
+.question{
+	margin-top: 53px;
+}
+.question p{
+	padding-left: 92px;
+	margin-bottom: 7px;
+}
+p.large{
+	font-size: 24px;
+}
+.requirements{
+	padding-top: 89px;
+	padding-bottom: 86px;
+	background-color: #fff;
+}
+.requirements h2{
+	font-size: 36px;
+	color: #01579b;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 40px;
+	
+}
+.requirements p.semibold{
+	margin-bottom: 31px;
+}
+p.warning{
+	font-size: 16px;
+	color: #8fa3b7;
+}
+/**** CAREGIVERS END ****/
+
+/**** Partners ****/
+.partners-banner{
+	width: 100%;
+	background: #1b87e5;
+	padding: 51px 0 64px 0;
+	margin-bottom: 82px;
+}
+.partners-banner h1{
+	font-size: 40px;
+	font-weight: 400;
+	color: #fff;
+}
+.partners-banner p{
+	color: #fff;
+}
+.partners-main p{
+	font-size: 16px;
+}
+.partners-main .row{
+	padding: 80px 0;
+	border-bottom: 1px solid #e1e6eb;
+}
+.partners-main .row:first-child{
+	padding: 0 0 80px 0;
+	border-bottom: 1px solid #e1e6eb;
+}
+.partners-main .row:last-child{
+	border-bottom: 0;
+}
+.clock-phone:before{
+	position: absolute;
+	content: '';
+	background: url(../images/clock%20+%20phone.svg) center center no-repeat;
+	background-size: contain;
+	width: 57px;
+	height: 57px;
+	margin-top: 5px;
+}
+.clock-phone{
+	margin-top: 47px;
+}
+.clock-phone p{
+	padding-left: 92px;
+}
+p.large{
+	font-size: 24px;
+}
+.partners-icon-block{
+	width: 100%;
+	padding: 69px 0 96px 0;
+	background: #f4f6f8;
+}
+.partners-icon-block p{
+	max-width: 100%;
+}
+.home:before{
+	position: absolute;
+	content: '';
+	background: url(../images/house.svg) center center no-repeat;
+	background-size: contain;
+	width: 68px;
+	height: 63px;
+	margin-top: 10px;
+	margin-left: -100px;
+}
+.hands:before{
+	position: absolute;
+	content: '';
+	background: url(../images/hands.svg) center center no-repeat;
+	background-size: contain;
+	width: 63px;
+	height: 58px;
+	margin-top: 10px;
+	margin-left: -100px;
+}
+.time-pills:before{
+	position: absolute;
+	content: '';
+	background: url(../images/meds+clock.svg) center center no-repeat;
+	background-size: contain;
+	width: 65px;
+	height: 64px;
+	margin-top: 10px;
+	margin-left: -100px;
+}
+.glass:before{
+	position: absolute;
+	content: '';
+	background: url(../images/glass.svg) center center no-repeat;
+	background-size: contain;
+	width: 57px;
+	height: 55px;
+	margin-top: 10px;
+	margin-left: -100px;
+}
+/**** PARTNERS END ****/
+
+/**** CONTACT US ****/
+.contact-banner{
+	width: 100%;
+	background: -moz-linear-gradient(0deg, #0067aa 0%, #1a86e4 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0067aa), color-stop(100%, #1a86e4)); /* safari4+,chrome */
+	background: -webkit-linear-gradient(0deg, #0067aa 0%, #1a86e4 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(0deg, #0067aa 0%, #1a86e4 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(0deg, #0067aa 0%, #1a86e4 100%); /* ie10+ */
+	background: linear-gradient(90deg, #0067aa 0%, #1a86e4 100%); /* w3c */
+	padding: 49px 0 41px 0;
+}
+.contact-banner h1{
+	font-size: 36px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.contact h2{
+	font-size: 36px;
+	font-weight: 400;
+	color: #03579b;
+	margin-bottom: 30px;
+}
+.contact .col-lg-12{
+	margin-bottom: 49px;
+}
 /**** FOOTER ****/
 .footer{
 	display: flex;
@@ -932,7 +1186,7 @@ p.after-list{
 	margin-bottom: 0;
 }
 .footer-nav li{
-	margin-right: 25px;
+	margin-right: 11px;
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	display: inline-block;
@@ -944,7 +1198,7 @@ p.after-list{
 	color: #fff;
 }
 .footer-caregiver{
-	padding-left: 25px;
+	padding-left: 11px;
 	border-left: 2px solid #71a7cc;
 }
 .social{
