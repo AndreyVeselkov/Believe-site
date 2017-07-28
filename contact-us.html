@@ -11,7 +11,7 @@
 		
 			<!--   FONTS -->
 			
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel=“stylesheet”/>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel=“stylesheet”/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 
@@ -66,7 +66,7 @@
 					<div class="col-lg-6">
 						<form id="contact-us" method="post">
 							<div class="form-row">
-								<p class="lead">Who needs care?</p>
+								<p>Who needs care?</p>
 								<div class="radio">
 									<input id="radio-1" name="radio" type="radio" checked>
     								<label for="radio-1" class="radio-label">Me</label>
@@ -74,26 +74,21 @@
    									<label  for="radio-2" class="radio-label">A loved one</label>
 								</div>
 							</div>
-							<div class="form-row name">
-								<input type="text" name="name" placeholder="Firts, Last Name"/>
+							<div class="form-row fields">
+								<input type="text" name="name" placeholder="Full Name"/>
 							</div>
-							<div class="form-row form-checkbox">
-								<label id="choose">Choose a way to communicate</label></br>
-								<label id="form-mail">
-									<input type="checkbox" name="mail" class="option-input checkbox"/>
-									Mail
-								</label>
-					 			<label>
-									<input type="checkbox" name="phone" class="option-input checkbox"/>
-									Phone
-								</label>
+							<div class="form-row fields">
+								<input type="email" name="name" placeholder="Email Address"/>
 							</div>
-							<div class="form-row zip">
-								<input type="text" name="zip" placeholder="ZIP (where care is desired)"/>
+							<div class="form-flex">
+							<div class="form-row half">
+									<input type="text" name="phone" placeholder="Phone number"/>
 							</div>
-							<div class="form-row questions">
-								<textarea name="questions" placeholder="Questions or comments"></textarea>
+							<div class="form-row half">
+									<input type="text" name="zip" placeholder="ZIP Code)"/>
+								</div>
 							</div>
+							
 							<div class="form-row hear">
 								<select class="form-control new-icon" id="sel1">
 									<option selected disabled hidden="">How did you hear about us?</option><option>1</option>
@@ -101,6 +96,9 @@
 									<option>3</option>
 									<option>4</option>
 								</select>
+							</div>
+							<div class="form-row questions">
+								<textarea name="questions" placeholder="Questions or comments"></textarea>
 							</div>
 							<div class="form-row">
 								<input type="submit" value="Send Request"/>

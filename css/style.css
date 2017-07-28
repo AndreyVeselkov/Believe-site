@@ -63,7 +63,7 @@ h1,h2, h3, h4, h5, h6 {
 	color: #37474F;	
 }
 .login a:first-child:hover{
-	color: #37474F;	
+	color: #01579b;	
 }
 .login a{
 	margin-right: 15px;	
@@ -85,11 +85,7 @@ h1,h2, h3, h4, h5, h6 {
 }
 .btn-outline:not(:hover){
     transition: 0.3s;
-    text-align: center;
-	padding: 5.5px 15px;
-	color: #1b87e5;	
-	border: 2px solid #1b87e5;
-	border-radius: 3px;
+    
 }
 .btn-filled{
 	text-align: center;
@@ -99,8 +95,13 @@ h1,h2, h3, h4, h5, h6 {
 	border-radius: 3px;
 }
 .btn-filled:hover{
+	transition: 0.3s;
     background: #1976D2;
     color: #fff;
+}
+.btn-filled:not(:hover){
+    transition: 0.3s;
+    
 }
 .btn-filled .material-icons{
 	vertical-align: middle;
@@ -517,8 +518,8 @@ textarea {
 	position: absolute;
 	content: '';
 	background: url(../images/ic_keyboard_arrow_down_black_24px.svg) center center no-repeat;
-	left: 416px;
-    margin-top: 12px;
+	left: 406px;
+    margin-top: 10px;
 	width: 40px;
     height: 30px;
 }
@@ -552,7 +553,7 @@ form label{
   height: 18px;
   position: relative;
   top: 1px;
-  margin-right: 1em;
+  margin-right: 16px;
   vertical-align: top;
   cursor: pointer;
   text-align: center;
@@ -671,7 +672,7 @@ input[type="submit"]{
 	height: 100%;
 	height: 446px;
 	padding-top: 52px;
-	margin-bottom: 99px;
+	margin-bottom: 77px;
 }
 .about-banner-text{
 	margin-left: -58px;
@@ -680,12 +681,12 @@ input[type="submit"]{
 	height: 343px
 }
 .about-banner-text h1{
-	max-width: 480px;
+	max-width: 517px;
     color: #01579b;
     font-size: 36px;
     margin-top: 0;
     font-weight: 600;
-    padding: 60px 0 0 58px;
+    padding: 51px 0 0 58px;
     line-height: 1.2;
     margin-bottom: 28px;
 }
@@ -693,6 +694,7 @@ input[type="submit"]{
 	color: #0068ac;
     max-width: 500px;
     padding-left: 58px;
+	line-height: 1.6;
 }
 .about-main-content h2{
 	text-align: center;
@@ -702,7 +704,7 @@ input[type="submit"]{
 	margin-bottom: 62px
 }
 .values img{
-	margin-bottom: 34px;
+	margin-bottom: 22px;
 }
 .values h4{
 	font-size: 20px;
@@ -714,14 +716,17 @@ input[type="submit"]{
 	font-size: 16px;
 	font-weight: 400;
 	color: #263239;
-	margin-bottom: 64px;
+	margin-bottom: 40px;
+	line-height: 1.34;
 }
 .values h3{
 	font-size: 24px;
 	font-weight: 400;
 	color: #263239;
 	text-align: center;
-	margin-bottom: 64px;		
+	border-bottom: 1px solid #e1e6eb;
+    padding-bottom: 56px;
+    margin-bottom: 54px;;		
 }
 .values a{
 	font-size: 24px;
@@ -730,7 +735,7 @@ input[type="submit"]{
 	border-bottom: 1px solid #e1e6eb;
 }
 .leadership{
-	margin-bottom: 90px;
+	margin-bottom: 61px;
 }
 .leadership h3{
 	font-size: 24px;
@@ -753,10 +758,21 @@ input[type="submit"]{
 	
 }
 img#scott{
-	margin-top: 20px;
+	margin-top: 21px;
+    margin-left: 9px;
 }
-#terry{
-	padding-left: 33px;
+#terry img{
+	margin-top: -14px;
+    margin-left: -18px;
+
+}
+#terry h3{
+	padding-left: 12px;
+    margin-top: 21px;
+	margin-bottom: 29px;
+}
+#terry p{
+	padding-left: 14px;
 }
 .above-footer{
 	background-color: #f4f6f8;
@@ -779,13 +795,13 @@ img#scott{
 	background-size: contain;
 	width: 100%;
 	min-height: 704px;
-	padding-top: 177px;
+	padding-top: 147px;
 }
 .faq-banner h1{
 	font-size: 60px;
 	font-weight: 400;
 	color: #fff;
-	margin-bottom: 56px;
+	margin-bottom: 62px;
 }
 .Background {
   
@@ -797,7 +813,7 @@ img#scott{
 .faq{
 	box-shadow: 0px 3px 24px 0px rgba(1, 55, 91, 0.15);
 	margin-bottom: 102px;
-	padding: 69px 0;
+	padding: 53px 0;
 	background-color: #fff;
 	border-radius: 5px;
 }
@@ -850,7 +866,7 @@ img#scott{
 }
 
 .tab-content p {
-  margin: 32px 0px 34px 0px;
+  margin: 20px 0px 34px 0px;
   font-size: 16px;
   color: #263239;
   line-height: 1.2;
@@ -882,10 +898,10 @@ img#scott{
   content: "\25BC";
 }
 .faq input[type=checkbox]:checked + label::after {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 .faq input[type=radio]:checked + label::after {
-  transform: rotateX(180deg);
+  transform: rotateX(-180deg);
 }
 
 /* Acordeon end*/
@@ -893,11 +909,12 @@ p.before-list{
 	margin-bottom: 20px;
 }
 p.after-list{
+	float:left;
 	margin-top: 25px;
 }
 .list-with-arrows p{
-	margin: 0 0 22px 0px;
-	padding-left: 30px;
+	margin: 0 0 20px 0px;
+	padding-left: 35px;
 	font-family: "Open Sans",sans-serif;
 	font-size: 16px;
 	color: #263239;
@@ -905,7 +922,7 @@ p.after-list{
 	
 }
 #right p{
-	margin: 0 0 22px 0px;
+	margin: 0 0 20px 0px;
 }
 .list-with-arrows p:before{
 	content: '';
@@ -915,7 +932,10 @@ p.after-list{
 	width: 16px;
 	height: 14px;
 	margin-top: 3px;
-	margin-left: -30px;
+	margin-left: -35px;
+}
+#bg-checks{
+	margin-left: 19px;
 }
 /**** FAQ END ****/
 
@@ -926,7 +946,7 @@ p.after-list{
 	background-size: contain;
 	width: 100%;
 	min-height: 329px;
-	padding-top: 79px;
+	padding-top: 53px;
 	
 }
 .caregivers-banner h1{
@@ -936,15 +956,18 @@ p.after-list{
 	margin-bottom: 46px;
 }
 .caregivers-banner p{
+	max-width: 940px;
 	color: #fff;
+	
 }
 .main-caregivers{
-	padding-top: 87px;
+	padding-top: 82px;
+	padding-bottom: 52px;
 	background: #f4f6f8;
 	
 }
 .main-caregivers p.with-icon{
-	max-width: 100%;
+	max-width: 400px;
 }
 .gift:before{
 	position: absolute;
@@ -961,33 +984,49 @@ p.after-list{
 	content: '';
 	background: url(../images/people.svg) center center no-repeat;
 	background-size: contain;
-	margin-top: 4px;
-	left: 0;
-	width: 64px;
-	height: 64px;
+	margin-top: 2px;
+    left: 1px;
+    width: 64px;
+    height: 64px;
 }
 .rocket:before{
 	position: absolute;
 	content: '';
 	background: url(../images/Roket.svg) center center no-repeat;
 	background-size: contain;
-	margin-top: 6px;
-	left: 0;
+	margin-top: 3px;
+	left: -5px;
 	width: 70px;
 	height: 73px;
 }
+.caregiver-icons p.with-icon{
+	padding-left: 89px;
+}
+.caregiver-icons p{
+	font-size: 16px;
+}
+.caregiver-icons p.blue{
+	font-size: 18px;
+}
 .caregiver-icons p:nth-child(even){
-	margin-bottom: 39px;
+	margin-bottom: 37px;
+}
+#caregivers{
+	margin-top: 8px;
+    margin-left: -6px;
 }
 #caregivers .fields{
-	margin-bottom: 19px;
+	margin-bottom: 14px;
 }
-#caregivers p.lead{
-	margin-bottom: 20px;
+#caregivers p{
+	margin-bottom: 14px;
 }
 #caregivers .radio{
 	margin-top: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 24px;
+}
+#caregivers input[type="submit"]{
+	padding: 11px 0;
 }
 .form-flex{
 	display: flex;
@@ -1005,6 +1044,7 @@ p.after-list{
 	text-align: center;
 	font-size: 16px;
 	color: #8fa3b7;
+	margin-bottom: 0;
 }
 .question:before{
 	position: absolute;
@@ -1016,7 +1056,8 @@ p.after-list{
 	margin-top: 5px;
 }
 .question{
-	margin-top: 53px;
+	margin-top: 42px;
+    margin-left: -5px;
 }
 .question p{
 	padding-left: 92px;
@@ -1027,7 +1068,7 @@ p.large{
 }
 .requirements{
 	padding-top: 89px;
-	padding-bottom: 86px;
+	padding-bottom: 77px;
 	background-color: #fff;
 }
 .requirements h2{
@@ -1039,11 +1080,18 @@ p.large{
 	
 }
 .requirements p.semibold{
-	margin-bottom: 31px;
+	margin-bottom: 24px;
+}
+.requirements .list-with-arrows{
+	margin-bottom: 10px;
+}
+.requirements .list-with-arrows p{
+	margin: 0 0 16px 0px;
 }
 p.warning{
 	font-size: 16px;
 	color: #8fa3b7;
+	max-width: 960px;
 }
 /**** CAREGIVERS END ****/
 
@@ -1051,13 +1099,15 @@ p.warning{
 .partners-banner{
 	width: 100%;
 	background: #1b87e5;
-	padding: 51px 0 64px 0;
+	padding: 44px 0 49px 0;
 	margin-bottom: 82px;
 }
 .partners-banner h1{
 	font-size: 40px;
-	font-weight: 400;
+	font-weight: 300;
 	color: #fff;
+	margin-top: 0;
+	margin-bottom: 25px;
 }
 .partners-banner p{
 	color: #fff;
@@ -1066,7 +1116,7 @@ p.warning{
 	font-size: 16px;
 }
 .partners-main .row{
-	padding: 80px 0;
+	padding: 64px 0;
 	border-bottom: 1px solid #e1e6eb;
 }
 .partners-main .row:first-child{
@@ -1075,6 +1125,11 @@ p.warning{
 }
 .partners-main .row:last-child{
 	border-bottom: 0;
+	padding: 61px 0 86px 0;
+}
+.partners-main .row:nth-child(2) img{
+	margin-left: 21px;
+    margin-top: 10px;
 }
 .clock-phone:before{
 	position: absolute;
@@ -1084,32 +1139,42 @@ p.warning{
 	width: 57px;
 	height: 57px;
 	margin-top: 5px;
+    margin-left: -5px;;
 }
 .clock-phone{
-	margin-top: 47px;
+	margin-top: 35px;
+}
+.partners-main .row:last-child .clock-phone{
+	margin-top: 21px;
 }
 .clock-phone p{
-	padding-left: 92px;
+	padding-left: 71px;
+	margin-bottom: 8px
 }
 p.large{
 	font-size: 24px;
 }
 .partners-icon-block{
 	width: 100%;
-	padding: 69px 0 96px 0;
+	padding: 64px 0 58px 0;
 	background: #f4f6f8;
 }
 .partners-icon-block p{
 	max-width: 100%;
+	margin-bottom: 8px;
+}
+.partners-icon-block p.with-icon:nth-child(even){
+	font-size: 16px;
+	margin-bottom: 40px;
 }
 .home:before{
 	position: absolute;
 	content: '';
 	background: url(../images/house.svg) center center no-repeat;
 	background-size: contain;
-	width: 68px;
-	height: 63px;
-	margin-top: 10px;
+	width: 69px;
+    height: 64px;
+    margin-top: 6px;
 	margin-left: -100px;
 }
 .hands:before{
@@ -1117,9 +1182,9 @@ p.large{
 	content: '';
 	background: url(../images/hands.svg) center center no-repeat;
 	background-size: contain;
-	width: 63px;
-	height: 58px;
-	margin-top: 10px;
+	width: 64px;
+    height: 59px;
+    margin-top: -1px;
 	margin-left: -100px;
 }
 .time-pills:before{
@@ -1129,8 +1194,8 @@ p.large{
 	background-size: contain;
 	width: 65px;
 	height: 64px;
-	margin-top: 10px;
-	margin-left: -100px;
+	margin-top: 9px;
+    margin-left: -91px;
 }
 .glass:before{
 	position: absolute;
@@ -1139,8 +1204,8 @@ p.large{
 	background-size: contain;
 	width: 57px;
 	height: 55px;
-	margin-top: 10px;
-	margin-left: -100px;
+	margin-top: 6px;
+    margin-left: -90px;
 }
 /**** PARTNERS END ****/
 
@@ -1153,12 +1218,13 @@ p.large{
 	background: -o-linear-gradient(0deg, #0067aa 0%, #1a86e4 100%); /* opera 11.10+ */
 	background: -ms-linear-gradient(0deg, #0067aa 0%, #1a86e4 100%); /* ie10+ */
 	background: linear-gradient(90deg, #0067aa 0%, #1a86e4 100%); /* w3c */
-	padding: 49px 0 41px 0;
+	padding: 43px 0 45px 0;
 }
 .contact-banner h1{
 	font-size: 36px;
-	font-weight: 400;
+	font-weight: 300;
 	color: #fff;
+	margin: 0;
 }
 
 .contact h2{
@@ -1167,9 +1233,46 @@ p.large{
 	color: #03579b;
 	margin-bottom: 30px;
 }
-.contact .col-lg-12{
-	margin-bottom: 49px;
+.contact-form.contact{
+	padding: 61px 0 94px 0;
 }
+.contact .col-lg-12{
+	margin-bottom: 23px;
+}
+.contact p.large{
+	margin-bottom: 33px;
+}
+.contact .btn-filled{
+    padding: 11px 39px;
+}
+#contact-us{
+	margin-top: 6px;
+    margin-left: -7px;
+}
+#contact-us .radio{
+	margin: 11px 0 17px 0;
+}
+#contact-us .radio label{
+	padding-right: 24px;
+}
+#contact-us .fields{
+	margin-bottom: 15px;
+}
+#contact-us .form-flex{
+ margin-bottom: 16px;
+}
+#contact-us .form-control{
+	margin-bottom: 15px;
+}
+#contact-us .form-row.questions{
+	margin-bottom: 25px;
+}
+#contact-us input[type="submit"]{
+	padding: 11px 0;
+}
+
+
+
 /**** FOOTER ****/
 .footer{
 	display: flex;
