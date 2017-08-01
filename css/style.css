@@ -898,6 +898,9 @@ input[type="submit"]{
 .leadership{
 	margin-bottom: 61px;
 }
+.leadership .row:last-child{
+	margin-top: 17px;
+}
 .leadership h3{
 	font-size: 24px;
 	font-weight: 400;
