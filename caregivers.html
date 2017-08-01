@@ -27,18 +27,72 @@
 			<img src="images/logo.png" alt="believe-logo" title="logo">
 		</div>
 		<div class="nav">
-			<ul class="main-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about-us.html">About</a></li>
+			<ul class="main-nav" role="menu">
+				<li class="dropdown"><a href="index.html">Home <i class="material-icons">arrow_drop_down</i></a>
+					<div class="dropdown-content">
+						<a href="index.html#caregivers">Caregivers</a>
+						<a href="index.html#technology">Technology</a>
+						<a href="index.html#sevices">Sevices</a>
+					</div>
+				
+				</li>
+				<li class="dropdown"><a href="about-us.html">About <i class="material-icons">arrow_drop_down</i></a>
+					<div class="dropdown-content">
+						<a href="about-us.html#values">Our Values</a>
+						<a href="about-us.html#team">Leadership Team</a>
+					</div>
+				
+				</li>
 				<li><a href="faq.html">FAQS</a></li>
-				<li><a href="caregivers.html"><a class="caregiver" href="#">Become a Caregiver</a></a></li>
+				<li><a href="caregivers.html"><a class="caregiver" href="caregivers.html">Become a Caregiver</a></a></li>
 			</ul>
-			
 		</div>
+		<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<img src="images/footer-logo.png"/>
+				<div class="mob-buttons">
+					<div class="row">
+						<div class="col-xs-6">
+							<a href="#">Login</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="contact-us.html">Contact Us</a>
+						</div>
+						<div class="col-xs-12">
+							<a href="caregivers.html">Become a Caregiver</a>
+						</div>
+					</div>
+				</div>
+				<div class="menu-accord">
+					<a class="with-drop" href="index.html">Home</a>
+			 		<div class="drop" onclick="myAccFunc()"><i class="material-icons" >arrow_drop_down</i></div>
+				 		<div id="demoAcc" class="hide w3-white w3-card-2">
+							<a href="index.html#caregivers" class="accord-link">Caregivers</a>
+				 			<a href="index.html#technology" class="accord-link">Technology</a>
+				 			<a href="index.html#sevices" class="accord-link">Sevices</a>
+				 		</div>
+				 </div>
+				 <div class="menu-accord">	
+				 	<a class="with-drop" href="about-us.html">About</a>
+			 		<div class="drop" onclick="myAccFunc1()"><i class="material-icons" >arrow_drop_down</i></div>
+				 		<div id="demoAcc1" class="hide w3-white w3-card-2">
+							<a href="#values" class="accord-link">Our Values</a>
+				 			<a href="#team" class="accord-link">Leadership Team</a>
+				 		</div>
+				  </div>
+				<a href="#">FAQ</a>
+				<a href="#">Partners</a>
+				<a href="#">EOE</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Use</a>
+			</div>
+
+
+			<span class="burger" onclick="openNav()">&#9776;</span>
 		<div class="login">
-			<a href="#">Login</a>
-			<a class="btn-outline" href="#">Contact Us</a>
-			<a class="btn-filled" href="#">215-345-5555</a>
+			<a id="login" href="#">Login</a>
+			<a id="contact" class="btn-outline" href="contact-us.html">Contact Us</a>
+			<a id="header-phone" class="btn-filled" href="tel:=1-215-345-5555">215-345-5555</a>
 			
 		</div>
 	</div>
@@ -87,7 +141,7 @@
 							</div>
 							<div class="form-flex">
 							<div class="form-row half">
-									<input type="text" name="phone" placeholder="Phone number"/>
+									<input type="text" name="phone" placeholder="Phone"/>
 							</div>
 							<div class="form-row half">
 									<input type="text" name="zip" placeholder="ZIP Code)"/>
@@ -145,11 +199,11 @@
 		</div>
 		<div class="nav">
 			<ul class="footer-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">FAQS</a></li>
-				<li><a class="footer-caregiver" href="#">Caregivers</a></li>
-				<li><a href="#">Partners</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About</a></li>
+				<li><a href="faq.html">FAQS</a></li>
+				<li><a class="footer-caregiver" href="caregivers.html">Caregivers</a></li>
+				<li><a href="partners.html">Partners</a></li>
 				<li><a href="#">Privacy policy</a></li>
 				<li><a href="#">EOE</a></li>
 				<li><a href="#">Terms of Use</a></li>
@@ -162,7 +216,10 @@
 			<a href="#"><img src="images/twitter.svg"></a>
 		</div>
 		<div class="footer-contact">
-			<a class="btn-outline" href="#">Contact Us</a>
-			<a class="btn-filled" href="#">215-345-5555</a>
+			<a class="btn-outline" href="contact-us.html">Contact Us</a>
+			<a class="btn-filled" href="tel:+1-215-345-5555">215-345-5555</a>
 		</div>
 	</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
